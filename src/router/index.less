@@ -1,0 +1,17 @@
+@import '../style/variables.less';
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .page {
+    box-sizing: border-box;
+    padding: @page-padding;
+    width: @page-width;
+    height: @page-height;
+    background-color: @page-bgcolor;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

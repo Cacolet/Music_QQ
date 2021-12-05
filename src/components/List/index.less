@@ -1,0 +1,85 @@
+@import '@/style/variables.less';
+.container {
+  width: @list-width;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    transition: color 300ms;
+    .item {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 15px 10px;
+      user-select: none;
+      &.title0 {
+        width: @list-name-width;
+      }
+      &.title1 {
+        width: @list-singer-width;
+      }
+      &.title2 {
+        width: @list-album-width;
+      }
+      &.title3 {
+        width: @list-interval-width;
+      }
+    }
+    &.title {
+      font-size: 14px;
+      color: #bbb;
+    }
+    &.content {
+      font-size: 15px;
+      border-radius: 10px;
+      transition: background-color 300ms;
+      &:hover {
+        background-color: #eee;
+      }
+      .item {
+        &.title3 > span {
+          color: #bbb;
+          transition: color 300ms;
+          &:hover {
+            cursor: default;
+            color: #bbb;
+          }
+        }
+        &.title0 > span {
+          &.select {
+            color: @green;
+          }
+          user-select: none;
+          transition: color 300ms;
+          &:hover {
+            cursor: pointer;
+            color: @green;
+          }
+        }
+        &.title2 > span {
+          &.select {
+            color: @green;
+          }
+          user-select: none;
+          transition: color 300ms;
+          &:hover {
+            cursor: pointer;
+            color: @green;
+          }
+        }
+        &.title1 > span {
+          &.select {
+            color: @green;
+          }
+          & > span > span {
+            transition: color 300ms;
+            &:hover {
+              cursor: pointer;
+              color: @green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

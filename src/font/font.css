@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2566083 */
+  src: url('//at.alicdn.com/t/font_2566083_w8hh7sohwns.woff2?t=1623807766669') format('woff2'),
+       url('//at.alicdn.com/t/font_2566083_w8hh7sohwns.woff?t=1623807766669') format('woff'),
+       url('//at.alicdn.com/t/font_2566083_w8hh7sohwns.ttf?t=1623807766669') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dou-arrow-down:before {
+  content: "\e7c5";
+}
+
+.icon-dou-arrow-up-large:before {
+  content: "\e636";
+}
+
+.icon-dou-arrow-down-large:before {
+  content: "\e632";
+}
+
+.icon-dou-arrow-up:before {
+  content: "\e7c4";
+}
+
+.icon-hanhan-0:before {
+  content: "\e6af";
+}
+
+.icon-hanhan-1:before {
+  content: "\e6b0";
+}
+
+.icon-arrow-up:before {
+  content: "\e601";
+}
+
+.icon-arrow-down:before {
+  content: "\e602";
+}
+
+.icon-arrow-left:before {
+  content: "\e603";
+}
+
+.icon-arrow:before {
+  content: "\e600";
+}
+
+.icon-add:before {
+  content: "\e61e";
+}
+
+.icon-trash:before {
+  content: "\ea16";
+}
+
+.icon-musiclist:before {
+  content: "\e608";
+}
+
+.icon-headpic:before {
+  content: "\e670";
+}
+
+.icon-CD:before {
+  content: "\e76a";
+}
+
+.icon-bofang1:before {
+  content: "\e626";
+}
+
+.icon-listen:before {
+  content: "\e707";
+}
+
+.icon-toplay:before {
+  content: "\e625";
+}
+
+.icon-toplay-hover:before {
+  content: "\ea92";
+}
+
+.icon-left-arrow:before {
+  content: "\e63b";
+}
+
+.icon-right-arrow:before {
+  content: "\e634";
+}
+
+.icon-shangyishou:before {
+  content: "\e63c";
+}
+
+.icon-xiayishou:before {
+  content: "\e63e";
+}
+
+.icon-mute-full:before {
+  content: "\ea7e";
+}
+
+.icon-soound-min:before {
+  content: "\ea80";
+}
+
+.icon-soound-min-full:before {
+  content: "\ea81";
+}
+
+.icon-sound-max-full:before {
+  content: "\ea82";
+}
+
+.icon-sound-max:before {
+  content: "\ea83";
+}
+
+.icon-pause:before {
+  content: "\ea8c";
+}
+
+.icon-pause-full:before {
+  content: "\ea8d";
+}
+
+.icon-play-full:before {
+  content: "\ea8e";
+}
+
+.icon-play:before {
+  content: "\ea8f";
+}
+
+.icon-stop-full:before {
+  content: "\ea90";
+}
+
+.icon-stop:before {
+  content: "\ea91";
+}
+
+.icon-mute:before {
+  content: "\ea7d";
+}
+
+.icon-hanhan-2:before {
+  content: "\e6ae";
+}
+
+.icon-recommend:before {
+  content: "\e631";
+}
+
+.icon-recommend-active:before {
+  content: "\ea20";
+}
+
+.icon-like:before {
+  content: "\e621";
+}
+
+.icon-like-active:before {
+  content: "\ea21";
+}
+
+.icon-lastplay-active:before {
+  content: "\ea22";
+}
+
+.icon-lastplay:before {
+  content: "\e6d7";
+}
+
+.icon-download:before {
+  content: "\e633";
+}
+
+.icon-local:before {
+  content: "\e6f6";
+}
+
+.icon-download-active:before {
+  content: "\ea23";
+}
+
+.icon-local-active:before {
+  content: "\ea24";
+}
+
+.icon-radio:before {
+  content: "\e693";
+}
+
+.icon-radio-active:before {
+  content: "\ea25";
+}
+
+.icon-video-active:before {
+  content: "\ea27";
+}
+
+.icon-music:before {
+  content: "\e630";
+}
+
+.icon-video:before {
+  content: "\e6e7";
+}
+
+.icon-music-active:before {
+  content: "\ea26";
+}
+
+.icon-qqmusic:before {
+  content: "\e62f";
+}
+
+.icon-home:before {
+  content: "\e609";
+}
+
+.icon-jian:before {
+  content: "\e715";
+}
+
+.icon-screen-stretch:before {
+  content: "\ea1e";
+}
+
+.icon-screen-shrink:before {
+  content: "\ea1f";
+}

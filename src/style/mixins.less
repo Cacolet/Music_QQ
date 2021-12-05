@@ -1,0 +1,294 @@
+.border-radius(@radius: 5px) {
+  border-radius: @radius;
+}
+
+.zoom-animation(
+  @direction: top,
+  @scaleStart: scaleY(0),
+  @scaleEnd: scaleY(1),
+  @origin: center top
+){
+  .zoom-in-@{direction}-enter {
+    opacity: 0;
+    transform: @scaleStart;
+  }
+  .zoom-in-@{direction}-enter-active {
+    opacity: 1;
+    transform: @scaleEnd;
+    transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms,
+      opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+    transform-origin: @origin;
+  }
+  .zoom-in-@{direction}-exit {
+    opacity: 1;
+  }
+  .zoom-in-@{direction}-exit-active {
+    opacity: 0;
+    transform: @scaleStart;
+    transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms,
+      opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+    transform-origin: @origin;
+  }
+}
+
+.toplayAnim(
+  @direction: toplayAnim,
+  @scale: scale(1)
+) {
+  .@{direction}-enter {
+    opacity: 0;
+    transform: @scale;
+  }
+  .@{direction}-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+  }
+  .@{direction}-exit {
+    opacity: 1;
+  }
+  .@{direction}-exit-active {
+    opacity: 0;
+    transform: @scale;
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+.toplay(
+  @direction: toplay,
+  @startscale: scale(0),
+  @endscale: scale(1)
+) {
+  .@{direction}-enter {
+    opacity: 0;
+    transform: @startscale;
+  }
+  .@{direction}-enter-active {
+    opacity: 1;
+    transform: @endscale;
+    transition: opacity 300ms, transform 300ms;
+  }
+  .@{direction}-exit {
+    opacity: 1;
+    transform: @endscale;
+  }
+  .@{direction}-exit-active {
+    opacity: 0;
+    transform: @startscale;
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+.playlistmodal(
+  @direction: playlistmodal,
+  @delay: 500ms,
+  @transform: translateX(400px)
+) {
+  .@{direction}-appear-done{
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+  }
+  .@{direction}-enter-done{
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+  }
+  .@{direction}-enter {
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    // opacity: 0;
+    transform: @transform;
+  }
+  .@{direction}-enter-active {
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    // opacity: 1;
+    transform: translateX(0);
+    transition: opacity @delay, transform @delay;
+  }
+  .@{direction}-exit {
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    // opacity: 1;
+  }
+  .@{direction}-exit-active {
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    // opacity: 0;
+    transform: @transform;
+    transition: opacity @delay, transform @delay;
+  }
+}
+
+
+.songmodal(
+  @direction: songmodal,
+  @delay: 500ms,
+  @transform: translateY(-400px),
+  @offset: 0
+) {
+  .@{direction}-appear-done{
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 900;
+  }
+  .@{direction}-enter-done{
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 900;
+  }
+  .@{direction}-enter {
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 900;
+    // opacity: 0;
+    transform: @transform;
+  }
+  .@{direction}-enter-active {
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 900;
+    // opacity: 1;
+    transform: translateY(0);
+    transition: opacity @delay, transform @delay;
+  }
+  .@{direction}-exit {
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 900;
+    // opacity: 1;
+  }
+  .@{direction}-exit-active {
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 900;
+    // opacity: 0;
+    transform: @transform;
+    transition: opacity @delay, transform @delay;
+  }
+}
+
+
+.rank(
+  @direction: rank,
+  @startscale: scale(0),
+  @endscale: scale(1)
+) {
+  .@{direction}-enter {
+    opacity: 0.1;
+    transform: @startscale;
+  }
+  .@{direction}-enter-active {
+    opacity: 1;
+    transform: @endscale;
+    transition: opacity 300ms, transform 300ms;
+  }
+  .@{direction}-exit {
+    opacity: 1;
+    transform: @endscale;
+  }
+  .@{direction}-exit-active {
+    opacity: 0.1;
+    transform: @startscale;
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+.songimg(
+  @direction: songimg,
+  @startscale: scale(0),
+  @endscale: scale(1)
+) {
+  .@{direction}-enter {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+  }
+  .@{direction}-enter-active {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+  }
+  .@{direction}-exit {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  .@{direction}-exit-active {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+
+.message(
+  @direction: message,
+  @startscale: scale(0),
+  @endscale: scale(1)
+) {
+  .@{direction}-enter {
+    position: absolute;
+    z-index: 99999999;
+    top: 50vh;
+    left: 50vw;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  }
+  .@{direction}-enter-active {
+    position: absolute;
+    z-index: 99999999;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  }
+  .@{direction}-exit {
+    position: absolute;
+    z-index: 99999999;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  }
+  .@{direction}-exit-active {
+    position: absolute;
+    z-index: 99999999;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  }
+}

@@ -1,0 +1,136 @@
+@import '@/style/variables.less';
+.container {
+  width: @player-width;
+  height: @player-height;
+  background-color: @player-bgcolor;
+  padding: @player-padding;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1000;
+  .pic {
+    & > img {
+      user-select: none;
+      -webkit-user-drag: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      margin: 0 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    position: relative;
+    .mask {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      margin: 0 10px;
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: #00000064;
+      &:hover {
+        cursor: pointer;
+      }
+      .arrowImg {
+        font-size: 25px;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 12px);
+        color: #ffffff88;
+      }
+    }
+  }
+  .info {
+    width: @player-info-width;
+    line-height: 24px;
+    & > div {
+      width: 15vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: color 300ms;
+      &:hover {
+        cursor: pointer;
+        color: @green;
+      }
+    }
+    .singers {
+      width: 15vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      .singer {
+        transition: color 300ms;
+        &:hover {
+          cursor: pointer;
+          color: @green;
+        }
+      }
+    }
+
+    div:last-child {
+      color: #7d7d7d;
+    }
+  }
+  .control {
+    width: @player-control-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    & > i {
+      margin: 5px;
+      transition: color 300ms;
+      &:hover {
+        color: @green;
+        cursor: pointer;
+      }
+    }
+    .circle {
+      font-size: 20px;
+    }
+    .arrow {
+      font-size: 30px;
+    }
+    .play {
+      font-size: 50px;
+      color: @green;
+    }
+    .voice {
+      font-size: 20px;
+    }
+  }
+  .playlist {
+    width: @player-playlist-width;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .timeAround {
+      color: @player-playlist-icon-color;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+    & > div {
+      display: flex;
+      align-items: center;
+      user-select: none;
+      .musiclist {
+        color: @player-playlist-icon-color;
+        font-size: 20px;
+        transition: color 300ms;
+        &:hover {
+          cursor: pointer;
+          color: @green;
+        }
+      }
+      .num {
+        margin-left: 5px;
+        color: @player-playlist-icon-color;
+      }
+    }
+  }
+}

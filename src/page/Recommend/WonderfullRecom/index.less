@@ -1,0 +1,49 @@
+@import '@/style/variables.less';
+
+.container {
+  width: @banner-width;
+  height: calc(@page-height - 20px - 43px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 50px;
+  box-sizing: border-box;
+  padding: calc((@page-height - 20px - 39px - (@banner-width) * 0.4) / 2) 0 0 0;
+  margin: 0 60px;
+  .img {
+    position: absolute;
+    -webkit-user-drag: none;
+    transition: transform 300ms;
+    width: @banner-width;
+    height: calc((@banner-width) * 0.4);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .dotContainer {
+    position: absolute;
+    top: calc((@page-height - 20px - 39px - (@banner-width) * 0.4) / 2 + (@banner-width) * 0.4);
+    width: calc(@banner-width);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .dot {
+      margin: 15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background-color: #e0e0e0;
+      transition: background-color 300ms;
+      &.active {
+        background-color: #aeaeae;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #aeaeae;
+      }
+    }
+  }
+}

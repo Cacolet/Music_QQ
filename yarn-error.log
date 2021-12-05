@@ -1,0 +1,95 @@
+Arguments: 
+  E:\node.js\node.exe C:\Users\17256\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\17256\bin;E:\Git\mingw64\bin;E:\Git\usr\local\bin;E:\Git\usr\bin;E:\Git\usr\bin;E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\17256\bin;C:\Users\17256\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\17256\AppData\Local\Programs\Python\Python38;D:\python\Scripts;D:\python;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\DTS\Binn;E:\node.js;E:\java\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;E:\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;F:\server;C:\Program Files\MySQL\MySQL Shell 8.0\bin;D:\python\新建文件夹\PyCharm Community Edition 2019.3.3\bin;E:\webstorm\WebStorm 2020.1.2\bin;C:\Users\17256\AppData\Roaming\npm;C:\Users\17256\.dotnet\tools;E:\pycharm\PyCharm 2021.1\bin;C:\Users\17256\AppData\Local\Microsoft\WindowsApps;D:\cmd_tools;E:\Git\usr\bin\vendor_perl;E:\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\17256\AppData\Local\Yarn\Cache\v6\npm-ms-2.1.2-d09d1f357b443f493382a8eb3ccd183872ae6009-integrity\node_modules\ms\package.json' -> 'F:\1\project\react-qq-music\node_modules\@babel\core\node_modules\ms\package.json'
+
+npm manifest: 
+  {
+    "name": "react-qq-music",
+    "version": "1.0.0",
+    "description": "qqmusic with react",
+    "main": "webpack.config.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "webpack serve",
+      "build": "cross-env NODE_ENV=production webpack --mode production",
+      "dll": "cross-env NODE_ENV=production webpack --mode production --config webpack_dll.config.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/rayhomie/react-qq-music"
+    },
+    "keywords": [
+      "react",
+      "qqmusic"
+    ],
+    "author": "rayhomie <1572801584@qq.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/rayhomie/react-qq-music/issues"
+    },
+    "homepage": "https://github.com/rayhomie/react-qq-music#readme",
+    "dependencies": {
+      "@ant-design/icons": "^4.6.2",
+      "axios": "^0.21.1",
+      "classnames": "^2.3.1",
+      "hox": "^1.1.4",
+      "lodash-es": "^4.17.21",
+      "normalize.css": "^8.0.1",
+      "qs": "^6.7.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "^5.2.0",
+      "react-transition-group": "^4.4.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.14.3",
+      "@babel/preset-env": "^7.14.2",
+      "@babel/preset-react": "^7.13.13",
+      "@types/lodash-es": "^4.17.4",
+      "@types/qs": "^6.9.6",
+      "@types/react": "^17.0.6",
+      "@types/react-dom": "^17.0.5",
+      "@types/react-router-dom": "^5.1.7",
+      "@types/react-transition-group": "^4.4.1",
+      "autoprefixer": "^10.2.5",
+      "awesome-typescript-loader": "^5.2.1",
+      "babel-loader": "^8.2.2",
+      "clean-webpack-plugin": "*",
+      "cross-env": "^7.0.3",
+      "css-loader": "^5.2.5",
+      "css-minimizer-webpack-plugin": "^3.0.1",
+      "cssnano": "^5.0.5",
+      "file-loader": "^6.2.0",
+      "html-webpack-plugin": "^5.3.1",
+      "less-loader": "^9.0.0",
+      "mini-css-extract-plugin": "^1.6.0",
+      "postcss-loader": "^5.3.0",
+      "source-map-loader": "^3.0.0",
+      "terser-webpack-plugin": "^5.1.3",
+      "typescript": "^3.9.9",
+      "url-loader": "^4.1.1",
+      "webpack-bundle-analyzer": "^4.4.2",
+      "webpack-cli": "^4.7.0",
+      "webpack-dev-server": "^3.11.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

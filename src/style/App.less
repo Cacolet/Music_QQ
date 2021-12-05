@@ -1,0 +1,78 @@
+@import 'normalize.css';
+@import './variables.less';
+@import '@/font/font.css';
+@import './mixins.less';
+
+/**
+ ** 应用级别的一些样式
+ **/
+body {
+  color: @font-color;
+  background-color: @white;
+}
+
+// 选择器
+::selection {
+  background-color: @green;
+  color: white;
+}
+
+// 滚动条
+::-webkit-scrollbar-track {
+  background-color: @scrollbar-track-color;
+}
+
+::-webkit-scrollbar {
+  width: @scrollbar-width;
+  height: @scrollbar-height;
+  background-color: @scrollbar-color;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: @scrollbar-width;
+  background-color: @scrollbar-thumb-color;
+  &:hover {
+    background-color: @scrollbar-thumb-hover-color;
+  }
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.5s;
+  transform: none;
+}
+.slide-enter,
+.slide-leave-to {
+  transform: translateY(100%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s;
+  opacity: 1;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+a {
+  color: @theme-color;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: @theme-color;
+  }
+}
+//动画
+.zoom-animation(top, scaleY(0), scaleY(1), center top);
+.zoom-animation(left, scale(0.45, 0.45), scale(1, 1), left);
+.zoom-animation(right, scale(0.45, 0.45), scale(1, 1), right);
+.zoom-animation(bottom, scaleY(0), scaleY(1), center bottom);
+.toplayAnim(toplayAnim, scale(1));
+.toplay(toplay, scale(0.75), scale(1));
+.playlistmodal(playlistmodal, 500ms, translateX(@playlistmodal-width));
+.songmodal(songmodal, 500ms, translateY(100vh));
+.rank(rank, scale(0.75), scale(1));
+.songimg(songimg, scale(0.75), scale(1));
+.message(message, scale(1), scale(1));

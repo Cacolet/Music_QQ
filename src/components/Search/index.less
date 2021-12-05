@@ -1,0 +1,92 @@
+@import '@/style/variables.less';
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: @input-bgcolor;
+  height: @input-height;
+  width: fit-content;
+  padding: @input-padding;
+  border-radius: @input-border-radius;
+  position: relative;
+  z-index: 1000;
+  & > div:first-child {
+    color: #707070;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & > input {
+    outline: none;
+    border: none;
+    background-color: #00000000;
+    width: 120px;
+    margin: 0 10px;
+    font-size: 14px;
+    &::-webkit-input-placeholder {
+      color: #9d9d9d;
+      font-size: 12px;
+    }
+  }
+  & > div:nth-child(3) {
+    font-size: 10px;
+    user-select: none;
+    color: #707070;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .resBoard {
+    position: absolute;
+    width: @input-res-board-width;
+    background-color: @input-res-board-bgcolor;
+    box-shadow: @input-res-board-box-shadow;
+    border: 1px solid @input-res-board-border-color;
+    left: 0;
+    top: 120%;
+    z-index: 99;
+    overflow: auto;
+    height: @input-res-board-height;
+    &.show {
+      display: none;
+    }
+    .title {
+      margin: 10px;
+      color: #9b9b9b;
+      font-size: 16px;
+      &:hover {
+        cursor: default;
+      }
+    }
+    .hotkeyItem {
+      padding: 10px;
+      font-size: 14px;
+      transition: background-color 300ms;
+      &:hover {
+        background-color: #f2f2f2;
+        user-select: none;
+        cursor: default;
+      }
+    }
+    .seachItem {
+      .title {
+        margin-top: 10px;
+      }
+      font-size: 14px;
+    }
+    // 滚动条
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      display: none;
+    }
+  }
+}
