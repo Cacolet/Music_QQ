@@ -1,7 +1,7 @@
 {
-  "name": "react-qq-music",
+  "name": "music-qq",
   "version": "1.0.0",
-  "description": "qqmusic with react",
+  "description": "music-qq with react",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
