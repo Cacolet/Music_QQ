@@ -1,7 +1,7 @@
 # 🎵 基于 React 的QQ音乐 mac 客户端播放器（PC） Online Music Player
 
 
-🌟[预览地址](http://music.rayhomie.icu/)🌟
+🌟[预览地址](http://music.cacolet.cn/)🌟
 
 
 ### 技术栈
